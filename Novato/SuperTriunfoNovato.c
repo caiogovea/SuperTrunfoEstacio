@@ -2,11 +2,19 @@
 
 int main() {
 
+<<<<<<< HEAD
 char estado1, estado2;
 char codigo1[4], codigo2[4];
 char cidade1[50], cidade2[50]; 
 int populacao1, populacao2;
 float area1, area2;
+=======
+char estado1, estado2; 
+char codigo1[4], codigo2[4]; 
+char cidade1[50], cidade2[50]; 
+int populacao1, populacao2; 
+float area1, area2; 
+>>>>>>> f2380c9 (Adiciona o nível Aventureiro)
 float pib1, pib2;
 int pontosT1, pontosT2;
 
@@ -61,6 +69,7 @@ printf("Digite o numero de pontos turisticos: ");
 scanf("%d", &pontosT2);
 
 // Exibição
+
 printf("\n=== CARTAS CADASTRADAS ==== \n");
 printf("\n - CARTA 1 - \n");
 
@@ -82,4 +91,11 @@ printf("População: %d\n", populacao2);
 printf("Area: %.2f km²\n", area2);
 printf("PIB: %.2f bilhões de reais\n", pib2);
 printf("Pontos Turisticos: %d\n", pontosT2);
+<<<<<<< HEAD
 }
+=======
+
+return 0;
+
+}
+>>>>>>> f2380c9 (Adiciona o nível Aventureiro)

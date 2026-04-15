@@ -2,11 +2,11 @@
 
 int main() {
 
-char estado1, estado2; // Atribui letras aos estados - e1 = A | e2 = B
-char codigo1[4], codigo2[4]; // Diz que o código deve ter 4 caracteres - A01 | B02
-char cidade1[50], cidade2[50]; // Permite que a cidade tenha nome de até 50 Caracteres
-int populacao1, populacao2; // Declara que só números inteiros podem entrar
-float area1, area2; // Permite o uso de casas decimal
+char estado1, estado2;
+char codigo1[4], codigo2[4];
+char cidade1[50], cidade2[50]; 
+int populacao1, populacao2;
+float area1, area2;
 float pib1, pib2;
 int pontosT1, pontosT2;
 

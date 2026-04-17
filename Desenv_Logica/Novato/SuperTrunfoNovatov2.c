@@ -2,19 +2,11 @@
 
 int main() {
 
-<<<<<<< HEAD
 char estado1, estado2;
-char codigo1[4], codigo2[4];
-char cidade1[50], cidade2[50]; 
-int populacao1, populacao2;
-float area1, area2;
-=======
-char estado1, estado2; 
 char codigo1[4], codigo2[4]; 
 char cidade1[50], cidade2[50]; 
 int populacao1, populacao2; 
 float area1, area2; 
->>>>>>> f2380c9 (Adiciona o nível Aventureiro)
 float pib1, pib2;
 int pontosT1, pontosT2;
 
@@ -31,7 +23,7 @@ printf("Digite o nome da cidade: ");
 scanf(" %[^\n]", cidade1);
 
 printf("Digite a populacao: ");
-scanf(" %f", &populacao1);
+scanf(" %d", &populacao1);
 
 printf("Digite a area (km²): ");
 scanf(" %f", &area1);
@@ -57,7 +49,7 @@ printf("Digite o nome da cidade: ");
 scanf(" %[^\n]", cidade2);
 
 printf("Digite a populacao: ");
-scanf("%f", &populacao2);
+scanf("%d", &populacao2);
 
 printf("Digite a area (km²): ");
 scanf("%f", &area2);
@@ -67,6 +59,13 @@ scanf("%f", &pib2);
 
 printf("Digite o numero de pontos turisticos: ");
 scanf("%d", &pontosT2);
+
+// Calculo
+
+float densidade1 = (float)populacao1 / area1;
+float densidade2 = (float)populacao2 / area2;
+float pibPC1 = (pib1 * 1000000000) / (float)populacao1;
+float pibPC2 = (pib2 * 1000000000) / (float)populacao2;
 
 // Exibição
 
@@ -80,6 +79,8 @@ printf("População: %d\n", populacao1);
 printf("Area: %.2f km²\n", area1);
 printf("PIB: %.2f bilhões de reais\n", pib1);
 printf("Pontos Turisticos: %d\n", pontosT1);
+printf("Densidade Populacional: %.2f hab/km²\n", densidade1);
+printf("PIB per Capita: %.2f reais\n", pibPC1);
 
 printf("\n");
 
@@ -91,11 +92,23 @@ printf("População: %d\n", populacao2);
 printf("Area: %.2f km²\n", area2);
 printf("PIB: %.2f bilhões de reais\n", pib2);
 printf("Pontos Turisticos: %d\n", pontosT2);
-<<<<<<< HEAD
+printf("Densidade Populacional: %.2f hab/km²\n", densidade2);
+printf("PIB per Capita: %.2f reais\n", pibPC2);
+
+// Comparação
+
+printf("=== COMPARAÇÕES ===");
+
+printf("\nCarta 1 - %s: %d\n", cidade1, populacao1);
+printf("Carta 2 - %s: %d\n", cidade2, populacao2);
+
+if (populacao1 > populacao2) {
+    printf("\nResultado: Carta 1 (%s) venceu!\n", cidade1);
+} else {
+    printf("\nResultado: Carta 2 (%s) venceu!\n", cidade2);
 }
-=======
+
 
 return 0;
 
 }
->>>>>>> f2380c9 (Adiciona o nível Aventureiro)
